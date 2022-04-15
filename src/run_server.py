@@ -36,9 +36,6 @@ def start_server(server: RPYCServer, logger: logging.Logger):
     try:
         logger.info(f'Starting server on {server.host}:{server.port}')
         server.start()
-    except KeyboardInterrupt:
-        logger.warning('Closing server after keyboard interrupt')
-        server.close()
     except Exception:
         logger.exception('Closing server after unexpected exception')
         server.close()
