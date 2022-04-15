@@ -4,7 +4,7 @@ import struct
 
 from rpyc.utils.server import ThreadedServer
 
-from .consts import ANY_CID, CID_STRUCT_FORMAT, UNIX_VSOCK_DEVICE_PATH
+from consts import ANY_CID, CID_STRUCT_FORMAT, UNIX_VSOCK_DEVICE_PATH
 
 
 def _get_local_vsock_device_path():
